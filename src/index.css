@@ -1,13 +1,12 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* 地図を画面全体に表示 */
+.leaflet-container {
+  width: 100vw;
+  height: 100vh;
 }
+
+/* カーソルを標準に戻す(標準の手アイコンは位置を正確に選択しづらい) */
+.leaflet-grab {cursor: auto;}
